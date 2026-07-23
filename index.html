@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pollería El Buen Sabor</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#fff8f2;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#d62828,#f77f00);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    margin-top:10px;
+    font-size:1.2rem;
+}
+
+nav{
+    background:#222;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:15px 20px;
+    transition:.3s;
+}
+
+nav a:hover{
+    background:#f77f00;
+}
+
+.hero{
+    background:url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1400&q=80') center/cover;
+    height:450px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.hero h2{
+    background:rgba(0,0,0,.6);
+    color:white;
+    padding:20px 40px;
+    border-radius:10px;
+    font-size:2.2rem;
+}
+
+section{
+    padding:60px 10%;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#d62828;
+}
+
+.menu{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    overflow:hidden;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px;
+}
+
+.card p{
+    padding:0 15px 15px;
+}
+
+.precio{
+    color:#d62828;
+    font-size:22px;
+    font-weight:bold;
+    padding:15px;
+}
+
+.contacto{
+    text-align:center;
+}
+
+button{
+    background:#d62828;
+    color:white;
+    border:none;
+    padding:15px 35px;
+    border-radius:40px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#f77f00;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>🍗 Pollería El Buen Sabor</h1>
+<p>El auténtico sabor del pollo a la brasa</p>
+</header>
+
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#menu">Menú</a>
+<a href="#nosotros">Nosotros</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
+<section class="hero" id="inicio">
+<h2>¡El mejor pollo a la brasa de la ciudad!</h2>
+</section>
+
+<section id="menu">
+<h2>Nuestro Menú</h2>
+
+<div class="menu">
+
+<div class="card">
+<img src="img/1-pollo-a-la-brasa.png">
+<h3>1 Pollo a la Brasa</h3>
+<p>Incluye papas fritas, ensalada y cremas.</p>
+<div class="precio">S/ 75.00</div>
+</div>
+
+<div class="card">
+<img src="img/medio pollo.webp">
+<h3>1/2 Pollo</h3>
+<p>Ideal para compartir.</p>
+<div class="precio">S/ 42.00</div>
+</div>
+
+<div class="card">
+<img src="img/un cuarto pollo.jpg">
+<h3>1/4 Pollo</h3>
+<p>Con papas y ensalada.</p>
+<div class="precio">S/ 24.00</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="nosotros">
+
+<h2>Sobre Nosotros</h2>
+
+<p style="text-align:center;font-size:18px;max-width:900px;margin:auto;">
+En Pollería El Buen Sabor preparamos nuestro pollo con ingredientes
+frescos, recetas tradicionales y el auténtico sabor peruano.
+Nuestro objetivo es ofrecer calidad, rapidez y excelente atención.
+</p>
+
+</section>
+
+<section id="contacto">
+
+<h2>Contáctanos</h2>
+
+<div class="contacto">
+<p><strong>📍 Dirección:</strong> Av. Principal 123</p>
+<br>
+<p><strong>📞 Teléfono:</strong> 999 999 999</p>
+<br>
+<p><strong>🕒 Horario:</strong> 12:00 PM - 11:00 PM</p>
+<br><br>
+
+<button onclick="window.location.href='https://wa.me/51999999999'">
+Pedir por WhatsApp
+</button>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Pollería El Buen Sabor | Todos los derechos reservados.</p>
+
+</footer>
+
+</body>
+</html>
